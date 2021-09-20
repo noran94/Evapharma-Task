@@ -1,0 +1,12 @@
+.click-row{
+    cursor: pointer;
+}
+@media only screen and (max-width: 600px) {
+    .mat-card-content{
+        width: 100%;
+        overflow: scroll;
+      }
+    table.mat-table{
+        overflow: scroll;
+      }
+  }

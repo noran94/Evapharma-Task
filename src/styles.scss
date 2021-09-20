@@ -1,1 +1,35 @@
 /* You can add global styles to this file, and also import other style files */
+
+@import '~@angular/material/prebuilt-themes/indigo-pink.css';
+@import '~@angular/material/theming';
+html, body { height: 100%; }
+body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif;
+  background-image: url("../src/assets/images/bk.png"); 
+  background-repeat: no-repeat;
+  background-attachment:fixed;
+  background-size: cover;
+}
+
+form{
+    display: flex;
+    flex-direction: column;
+}
+$success: mat-color(mat-palette($mat-light-green));
+$error: mat-color(mat-palette($mat-red));
+
+.success-snackbar {
+  background: $success;
+}
+
+.error-snackbar {
+  background: $error;
+}
+.mat-card-header-text{
+  width: 100% !important;
+}
+.mat-row:hover {
+  background-color: lightblue;
+}
+th.mat-header-cell {
+  font-size: large !important;
+}
