@@ -25,7 +25,7 @@ export class LoginComponent implements OnInit {
         duration: 3000,
         panelClass: 'success-snackbar'
       });
-      this.router.navigate(['/users']);
+      this.router.navigate(['/countries']);
     });
   }
 }

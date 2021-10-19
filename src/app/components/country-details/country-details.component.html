@@ -1,0 +1,19 @@
+<div class="d-flex  flex-column mt-3 h-100 align-items-center">
+    <mat-card class="example-card w-100">
+        <mat-card-header class="d-flex justify-content-center">
+            <mat-card-title>Country Details</mat-card-title>
+        </mat-card-header>
+        <mat-card-content>
+            <div class="d-flex flex-wrap align-items-center justify-content-around">
+                <div class="d-flex mx-5 w-100 justify-content-between">
+                    <mat-label><b>Country Name:</b><span class="px-1">{{country.name}}</span>
+                    </mat-label>
+                    <div class="d-flex justify-content-center">
+                        <button mat-raised-button color="primary" [routerLink]="['/countries']">Back</button>
+                    </div>
+                </div>
+            </div>
+        </mat-card-content>
+    </mat-card>
+    <app-cities class="w-100"></app-cities>
+</div>

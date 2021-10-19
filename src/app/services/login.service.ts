@@ -8,7 +8,7 @@ import { AuthRequest } from '../models/auth-request.model';
 export class LoginService {
   constructor(private http: HttpClient) { }
   login(body: AuthRequest) {
-    return this.http.post('login', body);
+    return this.http.post('user/login', body);
   }
   isLoggedIn() {
     return localStorage.getItem('token') !== null;

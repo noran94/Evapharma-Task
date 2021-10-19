@@ -1,0 +1,14 @@
+<h1 *ngIf="!isEditMode" mat-dialog-title>Add City</h1>
+<h1 *ngIf="isEditMode" mat-dialog-title>Edit City</h1>
+<div mat-dialog-content>
+    <form [formGroup]="cityform">
+        <mat-form-field appearance="fill">
+            <mat-label>Name:</mat-label>
+            <input type="text" matInput formControlName="name">
+        </mat-form-field>
+    </form>
+</div>
+<div mat-dialog-actions class="d-flex justify-content-end">
+    <button mat-raised-button color="primary" [disabled]="cityform.invalid" (click)="save()">Save</button>
+    <button mat-raised-button (click)="dialogRef.close()">Cancel</button>
+</div>
